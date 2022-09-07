@@ -1,0 +1,26 @@
+.sitemap {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fd;
+}
+
+.sitemap__item {
+  padding: 1.5rem;
+}
+
+.sitemap__title {
+  color: #616060;
+  font-weight: 500;
+}
+
+.copy {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .sitemap {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+}

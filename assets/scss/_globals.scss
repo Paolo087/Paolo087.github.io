@@ -1,0 +1,42 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-default;
+  display: grid;
+  grid-template:
+    "header" auto
+    "main" 1fr
+    "footer" auto;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.section__title {
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 200;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+}

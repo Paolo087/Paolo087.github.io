@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a class="nav__logo" href="#" class="span__logo-color2">
+          <span class="span__logo-color">KALA</span> Ecommerce
+        </a>
+        <nav class="nav">
+          <a href="./index.html" class="nav__item nav__item--active">Inicio</a>
+          <a href="./pages/categoria.html" class="nav__item">Categoria</a>
+          <a href="./pages/productos.html" class="nav__item">Productos</a>
+          <a href="./pages/ofertas.html" class="nav__item">Ofertas</a>
+          <a href="./pages/contactanos.html" class="nav__item">Contacto</a>
+        </nav>
+        <div class="login-button">
+          <a href="#">
+            <i class="bx bx-cart"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxs-brightness"></i>
+          </a>
+          <a href="#">
+            <i class="bx bx-user"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/carouselImg1.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Llegó la Primavera!</h4>
+              <p>Conozca los nuevos catalogos de la colección Primavera/Verano</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/carouselImg2.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Smartphones</h4>
+              <p>Las mejores ofertas en tecnología</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/carouselImg3.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Comodidad en el hogar</h3>
+              <p>Encontra los productos para tu hogar</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h2 class="section__title">Categoria prendas</h2>
+      <div class="card-container-index">
+        <div class="card-index">
+          <div class="imgBx-index">
+            <img src="./assets/images/carImgIndex1.webp" alt="" />
+            <h5>Ropas para hombres</h5>
+            <a href="./pages/productos.html" alt="“ver">Ver</a>
+          </div>
+        </div>
+        <div class="card-index">
+          <div class="imgBx-index">
+            <img src="./assets/images/cardImgIndex3.jpeg" alt="" />
+            <h5>Ropas para niños</h5>
+            <a href="./pages/productos.html" alt="“ver">Ver</a>
+          </div>
+        </div>
+        <div class="card-index">
+          <div class="imgBx-index">
+            <img src="./assets/images/cardImgIndex2.jpeg" alt="" />
+            <h5>Ropas para mujeres</h5>
+            <a href="./pages/productos.html" alt="“ver">Ver</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="sitemap">
+        <div class="sitemap__item">
+          <h3 class="sitemap__title">Información</h3>
+          <p>Sobre nosotros</p>
+          <p><a href="./pages/contactanos.html">contactanos</a></p>
+        </div>
+        <div class="sitemap__item">
+          <h3 class="sitemap__title">Categorías</h3>
+          <p>Electrónica</p>
+          <p>Ropas</p>
+          <p>Muebles</p>
+          <p>Vehículos</p>
+        </div>
+        <div class="sitemap__item">
+          <h3 class="sitemap__title">Redes sociales</h3>
+          <p>Facebook</p>
+          <p>Twitter</p>
+          <p>Instagram</p>
+          <p>LinkedIn</p>
+        </div>
+      </div>
+      <div>
+        <div class="copy">
+          <span> &copy; 2022 | Todos los derechos reservados</span>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  display: grid;
+  grid-template: "header" auto "main" 1fr "footer" auto;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.section__title {
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 200;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.card-container {
+  /*display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;*/
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.card-container .card {
+  /*background: #fff;
+  max-width: 300px;
+  max-height: 550px;
+  padding: 30px;*/
+  width: 100%;
+  background: #fff;
+  padding: 5px;
+}
+
+.card-container .card .imgBx {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.card-container .card .imgBx img {
+  /*width: 250px;
+  height: 300px;
+  // position: absolute;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+  transform-origin: center;
+  object-fit: cover;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+  transform-origin: center;
+}
+
+.card-container .card:hover .imgBx img {
+  transform: scale(1.5);
+}
+
+.card-container .card .content {
+  padding: 10px;
+}
+
+.card-container .card .content .productName h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin: 5px 0;
+}
+
+.card-container .card .content .price_rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-container .card .content .price_rating h2 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    flex-direction: row;
+  }
+}
+.carousel-item {
+  height: 15rem;
+  background: #777;
+  position: relative;
+}
+
+.carousel-container {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 30px;
+  padding-left: 50px;
+}
+
+#carouselCaptions {
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    height: 32rem;
+    background: #777;
+    position: relative;
+  }
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 16px;
+  background-color: #fafafa;
+}
+
+.nav {
+  flex-grow: 1;
+}
+
+.nav__logo {
+  flex-grow: 1;
+  text-decoration: none;
+  font-size: 24px;
+  color: #616060;
+  font-weight: 300;
+}
+
+.nav__logo:hover {
+  flex-grow: 1;
+  text-decoration: none;
+  font-size: 24px;
+  color: #616060;
+  font-weight: 300;
+}
+
+.span__logo-color {
+  color: #7e3131;
+}
+
+.nav__item {
+  text-decoration: none;
+  color: #616060;
+  margin-left: 24px;
+}
+
+.nav__item:hover {
+  text-decoration: none;
+  color: #7e3131;
+  margin-left: 24px;
+}
+
+.nav__item:first-child {
+  margin-left: 0;
+}
+
+.nav__item--active {
+  color: #000;
+}
+
+.login-button {
+  color: #7e3131;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    padding: 0 15% 3rem 15%;
+  }
+}
+.sitemap {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fd;
+}
+
+.sitemap__item {
+  padding: 1.5rem;
+}
+
+.sitemap__title {
+  color: #616060;
+  font-weight: 500;
+}
+
+.copy {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .sitemap {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+}
+.card-container-index {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.card-container-index .card-index {
+  width: 100%;
+  background: #fff;
+  padding: 5px;
+}
+
+.card-container-index .card-index .imgBx-index {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.card-container-index .card-index .imgBx-index img {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+  transform-origin: center;
+}
+
+.card-container-index .card-index .imgBx-index a {
+  position: -100px;
+  bottom: 1rem;
+  right: 11rem;
+  left: 11rem;
+  background-color: #7e3131;
+  border-radius: 1.5em;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em;
+}
+
+.card-container-index .card-index:hover .imgBx-index a {
+  position: absolute;
+  bottom: 1rem;
+  right: 11rem;
+  left: 11rem;
+  background-color: #7e3131;
+  border-radius: 1.5em;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em;
+}
+
+.card-container-index .card-index:hover .imgBx-index h5 {
+  position: absolute;
+  bottom: 4em;
+  right: 4em;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em;
+}
+
+.card-container-index .card-index:hover .imgBx-index img {
+  transform: scale(1.5);
+}
+
+.card-container-index .card-index .content {
+  padding: 10px;
+}
+
+.card-container-index .card-index .content .productName h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin: 5px 0;
+}
+
+.card-container-index .card-index .content .price_rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-container-index .card-index .content .price_rating h2 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .card-container-index {
+    flex-direction: row;
+  }
+}
+.category {
+  display: flex;
+  flex-direction: column;
+}
+
+.category__item {
+  padding: 1.5rem;
+  padding-left: 2rem;
+}
+
+.category__title {
+  color: #616060;
+  font-weight: 350;
+}
+
+.category-link:hover {
+  color: #7e3131;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .category {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
